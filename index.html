@@ -9,49 +9,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script type="text/javascript">
-    /* ---- particles.js config ---- */
-$(document).ready(function() {
 
-            
-            $('.toggle').on('click', function() {
-	           menu.toggleClass('active');
-            });        
-    
-                var preload = $('#preloader');
-        
-            /*
-			* Preloader intialization
-			*/
-            
-            setTimeout(function(){ 
-                $('.overlay').fadeOut(300);
-            }, 1200);
-    
-            
-    
-            setTimeout(function(){ 
-                $('.intro-quote').removeClass('quote-text-active');
-            }, 1500);
-
-    
-            setTimeout(function(){ 
-                $('#particles-js').addClass('particles-js-active');
-                $('.logo-body').addClass('logo-body-active').css("background-color", '#ffce00');
-            }, 1000);
-    
-            
-            $('.back-orange').click(function() {
-              event.preventDefault();
-                newLocation = this.href;
-                $('body').fadeOut(1000, newpage);
-                function newpage() {
-                    window.location.href ="businesses.html#mva";
-                }
-                    });        
-    
-                
-        
-particlesJS("particles-js", {
+   particlesJS("particles-js", {
   "particles": {
     "number": {
       "value": 800,
@@ -154,18 +113,13 @@ particlesJS("particles-js", {
 
   </head>
   <body>
-<section class="hero is-info is-fullheight">
   <div id="particles-js">
-  <div class="hero-body">
-    <div class="container has-text-centered">
       <h1 class="title">
         Binary Idea
       </h1>
       <h2 class="subtitle">
         Jayant Ramawat's Scientific Pursuits
-      </h2>
-    </div>
-  </div>
+      </h2>  
   </div>
 </section>
   </body>
