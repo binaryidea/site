@@ -1,138 +1,39 @@
+
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Binary Idea - Jayant Ramawat's Scientific Pursuits</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script type="text/javascript">
- /* ---- particles.js config ---- */
-$(document).ready(function() {
-
-            
-            $('.toggle').on('click', function() {
-	           menu.toggleClass('active');
-            });        
-    
-                var preload = $('#preloader');
-        
-            /*
-			* Preloader intialization
-			*/
-            
-            setTimeout(function(){ 
-                $('.overlay').fadeOut(300);
-            }, 1200);
-    
-            
-    
-            setTimeout(function(){ 
-                $('.intro-quote').removeClass('quote-text-active');
-            }, 1500);
-
-    
-            setTimeout(function(){ 
-                $('#particles-js').addClass('particles-js-active');
-                $('.logo-body').addClass('logo-body-active').css("background-color", '#ffce00');
-            }, 1000);
-    
-            
-            $('.back-orange').click(function() {
-              event.preventDefault();
-                newLocation = this.href;
-                $('body').fadeOut(1000, newpage);
-                function newpage() {
-                    window.location.href ="businesses.html#mva";
-                }
-                    });        
-    
-            
-   particlesJS("particles-js",{
-  "particles":{
-    "number":{
-      "value":400
-    },
-    "color":{
-      "value":"#fff"
-    },
-    "shape":{
-      "type":"circle",
-      "stroke":{
-        "width":1,
-        "color":"#ccc"
-      },
-      "image":{
-        "src":"http://www.iconsdb.com/icons/preview/white/contacts-xxl.png"
-      }
-    },
-    "opacity":{
-      "value":0.5,
-      "random":true,
-      "anim":{
-        "enable":false,
-        "speed":1
-      }
-    },
-    "size":{
-      "value": 5,
-      "random":false,
-      "anim":{
-        "enable": false,
-        "speed":30
-      }
-    },
-    "line_linked":{
-      "enable": true,
-      "distance": 120,
-      "color":"#fff",
-      "width":1
-    },
-    "move":{
-      "enable":true,
-      "speed":2,
-      "direction":"none",
-      "straight":false
-    }
-  },
-  "interactivity":{
-    "events":{
-      "onhover":{
-        "enable":true,
-        "mode":"repulse"
-      },
-      "onclick":{
-        "enable": true,
-        "mode":"push"
-      }
-    },
-    "modes":{
-      "repulse":{
-        "distance":50,
-        "duration":0.4
-      },
-      "bubble":{
-        "distance":100,
-        "size":10
-      }
-    }
-  }
-}
-    
-    </script>
-
-  </head>
-  <body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Particles Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
   <div id="particles-js">
-      <h1 class="title">
-        Binary Idea
-      </h1>
-      <h2 class="subtitle">
-        Jayant Ramawat's Scientific Pursuits
-      </h2>  
+    <div id="login">
+      <form>
+        <div>
+          <label for="username">Username</label>
+          <br>
+          <input type="text" placeholder="Username">
+        </div>
+
+        <div>
+          <label for="password">Password</label>
+          <br>
+          <input type="text" placeholder="Password">
+        </div>
+        <input type="submit" value="Login">
+      </form>
+    </div>
   </div>
-</section>
-  </body>
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+  <script>
+    particlesJS.load('particles-js', 'particles.json', function(){
+      console.log('particles.json loaded...');
+    });
+  </script>
+</body>
 </html>
